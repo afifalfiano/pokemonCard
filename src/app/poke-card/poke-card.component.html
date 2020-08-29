@@ -1,0 +1,42 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div *ngFor="let pokemon of dataPokemon; let k = index" class="mx-auto pt-2 pb-2">
+            <div class="col">
+                <div class="card" style="width: 18em;">
+                    <img class="card-img-top p-4 text-center" [src]="pokemon.urlAvatar" [alt]="pokemon.name" width="25">
+                    <div class="card-body">
+                    <h5 class="card-title bg-warning text-white text-center p-1">{{pokemon.name | uppercase}}</h5>
+                        <table class="table-borderless">
+                            <tr>
+                                <td>Order</td>
+                                <td>:</td>
+                                <td><p class="card-text">{{pokemon.rank}}</p></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>:</td>
+                                <td><p class="card-text">{{pokemon.tipePokemon}}</p></td>
+                            </tr>
+                            <tr>
+                                <td>Species</td>
+                                <td>:</td>
+                                <td><p class="card-text">{{pokemon.species}}</p></td>
+                            </tr>
+                            <tr>
+                                <td>Height</td>
+                                <td>:</td>
+                                <td><p class="card-text">{{pokemon.height}}</p></td>
+                            </tr>
+                            <tr>
+                                <td>Weight</td>
+                                <td>:</td>
+                                <td><p class="card-text">{{pokemon.weight}}</p></td>
+                            </tr>
+                        </table>    
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
