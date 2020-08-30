@@ -22,7 +22,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/assets/sitemap.xml"
             ],
             "styles": [
               "src/styles.css"
@@ -89,7 +90,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/assets/sitemap.xml"
             ],
             "styles": [
               "src/styles.css"
@@ -127,6 +129,6 @@
   },
   "defaultProject": "pokemonCardPWA",
   "cli": {
-    "analytics": false
+    "analytics": true
   }
 }
