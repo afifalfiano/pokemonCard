@@ -9,7 +9,10 @@ import { HeaderComponent } from './header/header.component';
 import { PokeCardComponent } from './poke-card/poke-card.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { LazyLoadImageModule, LAZYLOAD_IMAGE_HOOKS, ScrollHooks } from 'ng-lazyload-image';
 import { FooterComponent } from './footer/footer.component';
+import {NgxPaginationModule} from 'ngx-pagination';
+
 @NgModule({
   declarations: [
 
@@ -23,9 +26,11 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
+    LazyLoadImageModule,
+    NgxPaginationModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [{ provide: LAZYLOAD_IMAGE_HOOKS, useClass: ScrollHooks }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

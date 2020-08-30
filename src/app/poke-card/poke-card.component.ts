@@ -1,5 +1,5 @@
 import { PokeAPIService } from './../service/poke-api.service';
-import { Component, OnInit, ViewChild, ElementRef, ViewChildren } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-poke-card',
@@ -7,8 +7,8 @@ import { Component, OnInit, ViewChild, ElementRef, ViewChildren } from '@angular
   styleUrls: ['./poke-card.component.css']
 })
 export class PokeCardComponent implements OnInit {
-  // @ViewChild('idPokemon') idPoke: ElementRef;
-
+  // tslint:disable-next-line:no-inferrable-types
+  page: number = 1;
   dataPokemon: Array<any> = [];
   namePokemon: Array<any> = [];
   urlPokemon: Array<any> = [];

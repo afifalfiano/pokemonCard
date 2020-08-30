@@ -13,7 +13,7 @@ export class PokeAPIService {
   ) { }
 
   getDataPoke(): Observable<any> {
-    return this.httpSvc.get<any>(this.urlPokemonApi + '/pokemon?limit=150');
+    return this.httpSvc.get<any>(this.urlPokemonApi + '/pokemon?limit=1000');
   }
 
   getEachPokemon(data: any): Observable<any> {
