@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
 import { PokeCardComponent } from './poke-card/poke-card.component';
 import { HttpClientModule} from '@angular/common/http';
@@ -12,6 +11,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { FooterComponent } from './footer/footer.component';
 import { NgxPaginationModule} from 'ngx-pagination';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [

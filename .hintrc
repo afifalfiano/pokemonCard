@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "accessibility"
+    ],
+    "formatters": [
+        "summary",
+        "html"
+    ],
+    "hints": {
+        "meta-charset-utf-8": "error",
+        "content-type": "error"
+    }
+}
